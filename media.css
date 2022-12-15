@@ -1,0 +1,97 @@
+#header{
+    height: 19%;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+#header h1{
+    margin-left: 0%;
+    font-size: 320%;
+    color: white;
+}
+
+#header div{
+    width: 77%;
+    margin-right: 0%;
+}
+
+#section{
+    top: 59%;
+    width: 85%;
+    height: 55%;
+}
+
+#sectionBg{
+    top: 59%;
+    width: 85%;
+    height: 55%;
+}
+
+#upper-section{
+    height: 20%;
+}
+
+#lower-section{
+    height: 80%;
+    margin-top: 7%;
+}
+
+#temp{
+    font-size: 2.7rem;
+    padding: 5.5% 0% 0% 4%;
+    color: white;
+}
+
+#searchInfo *{
+    padding: 7% 12% 0% 0%;
+    font-size: 2.3rem;
+}
+
+#searchInfo h2{
+    font-size: 1.3rem;
+}
+
+#left-div{
+    width: 100%;
+}
+
+#desc{
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 7%;
+    font-size: 2rem;
+}
+
+#desc img{
+    padding-bottom: 2%;
+}
+
+#info-title *{
+    margin: 17% 0% 17% 25%;
+    font-size: 1.6rem;
+}
+
+#info-values *{
+    margin: 18% 0% 18% 10%;
+    font-size: 1.6rem;
+}
+
+#wind-speed{
+    margin-top: 24%;
+}
+
+#humidity{
+    margin-top: 27%;
+}
+
+#right-div{
+    display: none;
+}
+
+#footer a{
+    margin: 4%;
+}
+
+
+
+
