@@ -12,14 +12,10 @@ let weatherImg = document.querySelector("#desc img");
 let time = document.querySelector("#time");
 let date = document.querySelector("#date");
 
-let key, months, days;
+let months = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , "Jul" , "Aug" , "Sep" , "Oct" , "Nov" , "Dec"];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let url = "http://api.openweathermap.org/data/2.5/weather?q=";
-fetch("./file.json").then(response => response.json())
-.then(json => {
-    key = json.key;
-    months = json.months;
-    days = json.days;
-});
+let key = "8edd671f81db81163cbd706f126805d5";
 
 btn.addEventListener("click", searchCityWeather);
 
@@ -67,21 +63,21 @@ function showOutput(json){
 
     let condition = json.weather[0].id;
     if (condition < 300) {
-        weatherImg.setAttribute("src", "/images/storm.svg");
+        weatherImg.setAttribute("src", "./images/storm.svg");
     } else if (condition < 505) {
-        weatherImg.setAttribute("src", "/images/rainy.svg");
+        weatherImg.setAttribute("src", "./images/rainy.svg");
     } else if (condition === 515) {
-        weatherImg.setAttribute("src", "/images/snowflake.svg");
+        weatherImg.setAttribute("src", "./images/snowflake.svg");
     } else if (condition < 600) {
-        weatherImg.setAttribute("src", "/images/rain.svg");
+        weatherImg.setAttribute("src", "./images/rain.svg");
     } else if (condition < 700) {
-        weatherImg.setAttribute("src", "/images/snowflake.svg");
+        weatherImg.setAttribute("src", "./images/snowflake.svg");
     } else if (condition <= 800) {
-        weatherImg.setAttribute("src", "/images/haze.svg");
+        weatherImg.setAttribute("src", "./images/haze.svg");
     } else if (condition === 800) {
-        weatherImg.setAttribute("src", "/images/sun.svg");
+        weatherImg.setAttribute("src", "./images/sun.svg");
     } else {
-        weatherImg.setAttribute("src", "/images/clouds.svg");
+        weatherImg.setAttribute("src", "./images/clouds.svg");
     }
 }
 
