@@ -13,7 +13,7 @@ let time = document.querySelector("#time");
 let date = document.querySelector("#date");
 
 let key, months, days;
-let url = "http://api.openweathermap.org/data/2.5/weather?q=";
+let url = "https://api.openweathermap.org/data/2.5/weather?q=";
 fetch("./file.json").then(response => response.json())
 .then(json => {
     key = json.key;
