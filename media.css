@@ -16,15 +16,15 @@
 }
 
 #section{
-    top: 59%;
+    top: 58%;
     width: 85%;
-    height: 55%;
+    height: 59%;
 }
 
 #sectionBg{
-    top: 59%;
+    top: 58%;
     width: 85%;
-    height: 55%;
+    height: 59%;
 }
 
 #upper-section{
@@ -33,7 +33,7 @@
 
 #lower-section{
     height: 80%;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 #temp{
@@ -67,12 +67,12 @@
 }
 
 #info-title *{
-    margin: 17% 0% 17% 25%;
+    margin: 14% 0% 14% 25%;
     font-size: 1.6rem;
 }
 
 #info-values *{
-    margin: 18% 0% 18% 10%;
+    margin: 15% 0% 15% 10%;
     font-size: 1.6rem;
 }
 
@@ -81,7 +81,7 @@
 }
 
 #humidity{
-    margin-top: 27%;
+    margin-top: 26%;
 }
 
 #right-div{

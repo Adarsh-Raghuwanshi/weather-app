@@ -12,10 +12,14 @@ let weatherImg = document.querySelector("#desc img");
 let time = document.querySelector("#time");
 let date = document.querySelector("#date");
 
-let months = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , "Jul" , "Aug" , "Sep" , "Oct" , "Nov" , "Dec"];
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let key, months, days;
 let url = "http://api.openweathermap.org/data/2.5/weather?q=";
-let key = "8edd671f81db81163cbd706f126805d5";
+fetch("./file.json").then(response => response.json())
+.then(json => {
+    key = json.key;
+    months = json.months;
+    days = json.days;
+});
 
 btn.addEventListener("click", searchCityWeather);
 

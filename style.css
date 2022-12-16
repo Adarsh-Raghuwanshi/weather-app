@@ -78,8 +78,8 @@ button:hover{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    animation: fadeout 4s;
-    animation-timing-function: ease-in-out;
+    /* animation: fadeout 4s;
+    animation-timing-function: ease-in-out; */
 }
 
 #sectionBg{
@@ -93,8 +93,8 @@ button:hover{
     opacity: 0.3;
     border-radius: 15px;
     z-index: -5;
-    animation: fadeout 2s;
-    animation-timing-function: ease-in-out;
+    /* animation: fadeout 2s;
+    animation-timing-function: ease-in-out; */
 }
 
 @keyframes fadeout{
